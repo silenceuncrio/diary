@@ -1,11 +1,11 @@
-[2015-12-01](/silenceuncrio/diary/wiki/20151201_jeffrey)
+[2015-12-01](https://github.com/silenceuncrio/diary/wiki/20151201_jeffrey)
 ---
 * IoT Platform
 * IoT Platform - discuss with jammy
 * ISO 9001 - 2015條文訓練
 * [文章]比較分析五種常見之國際軟體工程標準
 
-[2015-12-02](/silenceuncrio/diary/wiki/20151202_jeffrey)
+[2015-12-02](https://github.com/silenceuncrio/diary/wiki/20151202_jeffrey)
 ---
 * 紀錄 IoT Platform 想法
 * IoT Platform Configure Message
@@ -23,7 +23,7 @@
 * Sync IoT Platform with Jammy
 
 
-[2015-12-03](/silenceuncrio/diary/wiki/20151203_jeffrey)
+[2015-12-03](https://github.com/silenceuncrio/diary/wiki/20151203_jeffrey)
 ---
 * Review 工讀生 from mantis
 * Bob 的聲音部分
@@ -36,7 +36,7 @@
 * 情報 - 名片式 LED　跑馬燈
 * 發想 - 無線通訊的 MCU
 
-[2015-12-04](/silenceuncrio/diary/wiki/20151204_jeffrey)
+[2015-12-04](https://github.com/silenceuncrio/diary/wiki/20151204_jeffrey)
 ---
 * 分享 - 一塊 Raspberry Pi 五美元開發版，帶給台灣硬體廠的啟示
 * EFM Bridge Issue - 480 kb 限制
@@ -48,7 +48,7 @@
 * 完成 IoT Platform - RESTful Web API 定義
 * 情報 - 跟 charlie 聊到 歐瑞博COCO智能插線板
 
-[2015-12-05](/silenceuncrio/diary/wiki/20151205_jeffrey)
+[2015-12-05](https://github.com/silenceuncrio/diary/wiki/20151205_jeffrey)
 ---
 * 淘寶 - [NodeMCU](http://www.nodemcu.com/index_cn.html)
 * Survey ESP8266
@@ -57,13 +57,13 @@
 * 打電話回去裝忙說不回台中
 * 拆開 歐瑞博COCO智能插線板並拍照
 
-[2015-12-06](/silenceuncrio/diary/wiki/20151206_jeffrey)
+[2015-12-06](https://github.com/silenceuncrio/diary/wiki/20151206_jeffrey)
 ---
 * 掏寶 - ESP8266 WiFi 智能小車 免費源碼 無線遙控 NodeMCU Lua 2WD ESP
 * IoT Platform 安排
 
 
-[2015-12-07](/silenceuncrio/diary/wiki/20151207_jeffrey)
+[2015-12-07](https://github.com/silenceuncrio/diary/wiki/20151207_jeffrey)
 ---
 * jammy 給我上禮拜跟他一起買的 newifi mini
 * 智慧排插 發想
@@ -79,7 +79,7 @@
 * email: Re: Weekly IoT meeting: 10:30am 12-8-2015
 * 晚上來補一下 Proscend IoT Control Center
 
-[2015-12-08](/silenceuncrio/diary/wiki/20151208_jeffrey)
+[2015-12-08](https://github.com/silenceuncrio/diary/wiki/20151208_jeffrey)
 ---
 * IoT 週會前的準備
 * IoT 週會後的感想及條列重點
@@ -89,7 +89,7 @@
 * Eric 請我幫他找找看太陽能板
 * update mantis
 
-[2015-12-09](/silenceuncrio/diary/wiki/20151209_jeffrey)
+[2015-12-09](https://github.com/silenceuncrio/diary/wiki/20151209_jeffrey)
 ---
 * smart lighting survey
 * update IoT Platform information on mantis
@@ -99,13 +99,13 @@
 * update IoT Platform information on mantis
 
 
-[2015-12-10](/silenceuncrio/diary/wiki/20151210_jeffrey)
+[2015-12-10](https://github.com/silenceuncrio/diary/wiki/20151210_jeffrey)
 ---
 * IoT Platform 
 * 申請 iOS 開發者帳號 for 公司用
 * review mantis
 
-[2015-12-11](/silenceuncrio/diary/wiki/20151211_jeffrey)
+[2015-12-11](https://github.com/silenceuncrio/diary/wiki/20151211_jeffrey)
 ---
 * mail about IoS
 * Discuss EFM Bridge VLAN Hybrid with Spring
@@ -118,14 +118,14 @@
 * LuCI 對於公司開發的不恰當性
 * Spring is happy to see the mantis wiki
 
-[2015-12-12](/silenceuncrio/diary/wiki/20151212_jeffrey)
+[2015-12-12](https://github.com/silenceuncrio/diary/wiki/20151212_jeffrey)
 ---
 * survey LuCI2
 * summaries for our current IoT Platform
 * reply to mail from Pioneer: Re: [Share]issues for openHAB gateway solution.
 * reply all at mail to share IoT Protocol: Re: [Share]issues for openHAB gateway solution.
 
-[2015-12-14](/silenceuncrio/diary/wiki/20151214_jeffrey)
+[2015-12-14](https://github.com/silenceuncrio/diary/wiki/20151214_jeffrey)
 ---
 * 幫忙 IoS 小組測量 BLE Beacon 距離
 * review diary and write index
@@ -139,7 +139,7 @@
 * 寫 CGI - issue: 不要呼叫 cgiFree()
 * 跟 Jammy 聊一下解開潛在心結
 
-[2015-12-15](/silenceuncrio/diary/wiki/20151215_jeffrey)
+[2015-12-15](https://github.com/silenceuncrio/diary/wiki/20151215_jeffrey)
 ---
 * review yesterday
 * CGI - `#include <json-c/json.h>`
@@ -164,7 +164,7 @@
 * Nginx - 明天繼續研究 fcgi
 
 
-[2015-12-16](/silenceuncrio/diary/wiki/20151216_jeffrey)
+[2015-12-16](https://github.com/silenceuncrio/diary/wiki/20151216_jeffrey)
 ---
 * FastCGI - 專心地來做
 * Mail - 我 - 申請 Apple 開發者帳號最後的進度情況
@@ -186,7 +186,7 @@
 * FastCGI - `fcgitest_02.c` - 每秒處理量輕鬆破 100
 
 
-[2015-12-17](/silenceuncrio/diary/wiki/20151217_jeffrey)
+[2015-12-17](https://github.com/silenceuncrio/diary/wiki/20151217_jeffrey)
 ---
 - 寫 2015 年公司內部服務滿意度調查表
 - 整理一下這兩天的測試數據
@@ -204,7 +204,7 @@
 - mail - Re: [Share]issues for openHAB gateway solution
 
 
-[2015-12-18](/silenceuncrio/diary/wiki/20151218_jeffrey)
+[2015-12-18](https://github.com/silenceuncrio/diary/wiki/20151218_jeffrey)
 ---
 - JS9331 - CGI/FastCGI test with lan/wlan
 - JS9331 - 再準備一次 Nginx
@@ -214,19 +214,19 @@
 - mail - SW Arch and feature list. Re: MiFi Schedule Plan
 
 
-[2015-12-19](/silenceuncrio/diary/wiki/20151219_jeffrey)
+[2015-12-19](https://github.com/silenceuncrio/diary/wiki/20151219_jeffrey)
 ---
 - Maker 的世界就快到了
 
 
-[2015-12-21](/silenceuncrio/diary/wiki/20151221_jeffrey)
+[2015-12-21](https://github.com/silenceuncrio/diary/wiki/20151221_jeffrey)
 ---
 - 公司電腦 Window 10 更新
 - 提醒~健檢自費繳費~FW: 健檢公告Announcement~~Annual Medical Check-Up for 2015
 - JS9331 - 繼續上禮拜五未完的實驗
 - JS9331 - notebook 與 js9331 wlan 的連接一直出問題
 
-[2015-12-22](/silenceuncrio/diary/wiki/20151222_jeffrey)
+[2015-12-22](https://github.com/silenceuncrio/diary/wiki/20151222_jeffrey)
 ---
 - Jim 來信關心
 - 繼續測試 JS9331
@@ -239,7 +239,7 @@
 - js9331_cgi_fcgi_test
 - mail - Re: [Share]issues for openHAB gateway solution.
 
-[2015-12-23](/silenceuncrio/diary/wiki/20151223_jeffrey)
+[2015-12-23](https://github.com/silenceuncrio/diary/wiki/20151223_jeffrey)
 ---
 - review diary
 - SW Arch and feature list. Re: MiFi Schedule Plan
@@ -254,7 +254,7 @@
 - NodeMCU - 台灣 WoT.City 上不錯的入門文章
 - NodeMCU - 收集一下我手上的 NodeMCU 情報
 
-[2015-12-24](/silenceuncrio/diary/wiki/20151224_jeffrey)
+[2015-12-24](https://github.com/silenceuncrio/diary/wiki/20151224_jeffrey)
 ---
 - NodeMCU - 光一個 GPIO 就搞不定  
 - Android APP - charlie 麻煩我先做 Android APP上架動作
@@ -267,7 +267,7 @@
 - NodeMCU - Your LED should be blinking every 2 seconds
 - NodeMCU - 買書 - Home Automation Using ESP8266 eBook
 
-[2015-12-25](/silenceuncrio/diary/wiki/20151225_jeffrey)
+[2015-12-25](https://github.com/silenceuncrio/diary/wiki/20151225_jeffrey)
 ---
 - Jeffrey 2015-1125 禮拜五 未帶員工識別證
 - IoT Platform - 與 JS9331 的 FastCGI 互動的環境構建 - 思考
@@ -282,7 +282,7 @@
 - MonkeyJJ - 繼電器 - 拿 NodeMCU 造樣造句... 失敗
 - MonkeyJJ - 繼電器 - ESP8266WIFI模块自制智能插座
 
-[2015-12-26](/silenceuncrio/diary/wiki/20151226_jeffrey)
+[2015-12-26](https://github.com/silenceuncrio/diary/wiki/20151226_jeffrey)
 ---
 - OpenWrt JXcore - Package Creation
 - OpenWrt JXcore - 在 VMware 上裝 ubuntu - 當機
@@ -291,7 +291,7 @@
 - OpenWrt JXcore - Package Creation 
 
 
-[2015-12-27](/silenceuncrio/diary/wiki/20151227_jeffrey)
+[2015-12-27](https://github.com/silenceuncrio/diary/wiki/20151227_jeffrey)
 ---
 - 早上帶寶貝回台中拿中藥  
 - OpenWrt JXcore - Package Creation
@@ -300,7 +300,7 @@
 - OpenWrt JXcore - 寶貝老婆聰明的建議 - 讓我交換了兩部電腦的硬碟
 
 
-[2015-12-28](/silenceuncrio/diary/wiki/20151228_jeffrey)
+[2015-12-28](https://github.com/silenceuncrio/diary/wiki/20151228_jeffrey)
 ---
 - review diary and prepare engineering notebook
 - mail - Continue your Apple Developer Program enrollment.
@@ -316,7 +316,7 @@
 - IOT Platform - Jammy 問到 AMEBA 怎麼送 RESTful 給 Control Center
 - IOT Platform - 利用工讀生他們的環境來做事
 
-[2015-12-29](/silenceuncrio/diary/wiki/20151229_jeffrey)
+[2015-12-29](https://github.com/silenceuncrio/diary/wiki/20151229_jeffrey)
 ---
 - IoT Platform - Control Box - Message Tx Handler
 - IoT Platform - Control Center - Message Tx Handler
@@ -331,7 +331,7 @@
 - IoT Platform - Control Center - Message Tx Handler - 準備公司電腦環境
 - IoT Platform - Control Center - Message Tx Handler - curltest.c
 
-[2015-12-30](/silenceuncrio/diary/wiki/20151230_jeffrey)
+[2015-12-30](https://github.com/silenceuncrio/diary/wiki/20151230_jeffrey)
 ---
 - 整理日記
 - IoT Platform - 站在公司的立場思考
@@ -342,7 +342,7 @@
 - IoT Platform - O'Smart Plug - 追加
 - IoT Platform - IoT Platform schedule - Smart Room Feature List
 
-[2015-12-31](/silenceuncrio/diary/wiki/20151231_jeffrey)
+[2015-12-31](https://github.com/silenceuncrio/diary/wiki/20151231_jeffrey)
 ---
 - O'SAMRT Plug - Jim 來電
 - 跟寶貝老婆在劍湖山等着跨年
