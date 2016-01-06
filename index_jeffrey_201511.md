@@ -1,4 +1,4 @@
-[2015-11-18](/silenceuncrio/diary/wiki/20151118_jeffrey)
+[2015-11-18](https://github.com/silenceuncrio/diary/wiki/20151118_jeffrey)
 ---
 * ACE Solution: 四片 5600 出 sample
 * ACE Solution: release and commit to SVN
@@ -6,7 +6,7 @@
 * IoT Smart Lighting Education Kit review
 * update mantis wiki
 
-[2015-11-19](/silenceuncrio/diary/wiki/20151119_jeffrey)
+[2015-11-19](https://github.com/silenceuncrio/diary/wiki/20151119_jeffrey)
 ---
 * IoT Smart Lighting Education Kit: 來自教授的回覆
 * IoT Gateway Demo: 工讀生今天的目標
@@ -16,7 +16,7 @@
 * 要求工讀生註冊公司 mantis 帳號
 * IoT Gateway Demo Review
 
-[2015-11-20](/silenceuncrio/diary/wiki/20151120_jeffrey)
+[2015-11-20](https://github.com/silenceuncrio/diary/wiki/20151120_jeffrey)
 ---
 * review diary
 * maintain IoT Gateway Demo
@@ -27,13 +27,13 @@
 * discuss rs485 with PHT
 * read the mail from Pioneer
 
-[2015-11-22](/silenceuncrio/diary/wiki/20151122_jeffrey)
+[2015-11-22](https://github.com/silenceuncrio/diary/wiki/20151122_jeffrey)
 ---
 * 在家起床後的一些事
 * review the mail from Pioneew
 * plan the IoT platform
 
-[2015-11-23](/silenceuncrio/diary/wiki/20151123_jeffrey)
+[2015-11-23](https://github.com/silenceuncrio/diary/wiki/20151123_jeffrey)
 ---
 * review diary
 * read Arduino Cookbook
@@ -43,7 +43,7 @@
 * arrange the IoT Platform Plan
 * review the IoT Platform Plan today
 
-[2015-11-24](/silenceuncrio/diary/wiki/20151124_jeffrey)
+[2015-11-24](https://github.com/silenceuncrio/diary/wiki/20151124_jeffrey)
 ---
 * remind today's work to student _Lun_
 * survey the book _Raspberry Pi Cookbook_ ch 8 to 13
@@ -54,7 +54,7 @@
 * review Smart Lighting Educational Kit 
 * join Internet of Things Project meeting
 
-[2015-11-25](/silenceuncrio/diary/wiki/20151125_jeffrey)
+[2015-11-25](https://github.com/silenceuncrio/diary/wiki/20151125_jeffrey)
 ---
 * review diary and write the summaries to engineering note book
 * review diary and arrange the summaries
@@ -65,7 +65,7 @@
 * write application case 1 of IoT Platform Plan on GitHub
 * 下班
 
-[2015-11-26](/silenceuncrio/diary/wiki/20151126_jeffrey)
+[2015-11-26](https://github.com/silenceuncrio/diary/wiki/20151126_jeffrey)
 ---
 * 準備 IOT platform Development meeting
 * review again
@@ -74,7 +74,7 @@
 * IoT Platform communication 示意圖
 * action: 下禮拜要定義 control center 與 control box 間的溝通方式及格式
 
-[2015-11-30](/silenceuncrio/diary/wiki/20151130_jeffrey)
+[2015-11-30](https://github.com/silenceuncrio/diary/wiki/20151130_jeffrey)
 ---
 * 回顧和整理日記
 * email - Re: Some 579x's issues
