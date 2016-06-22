@@ -1,4 +1,43 @@
-...
+[2016-06-01](https://github.com/silenceuncrio/diary/wiki/20160601_jeffrey)
+---
+- window GUI  VB
+- electron Build cross platform desktop apps with JavaScript, HTML, and CSS
+
+[2016-06-02](https://github.com/silenceuncrio/diary/wiki/20160602_jeffrey)
+---
+- m300 MfgTool  
+- ELECTRON
+- survey visual basic
+- m300 schedule  
+
+[2016-06-06](https://github.com/silenceuncrio/diary/wiki/20160606_jeffrey)
+---
+- mail 取消 computex 計畫
+- 準備 m300 開會
+- image layout
+- Yocto Project Mega-Manual Creating Partitioned Images
+- wic create
+- 研究 wic
+- wic list images sdimage-bootpart
+- wic list images sdimage-bootpart.wks
+- wic create sdimage-bootpart -e core-image-minimal 錯誤
+- `find . -name "*.conf" -exec grep -H "IMAGE_BOOT_FILES" {} \;`
+- 放棄 追 wic
+- NodeMCU C#
+- 看影片 太慢  
+- `c# serial port`
+- morris MEMS 麥克風
+
+
+[2016-06-07](https://github.com/silenceuncrio/diary/wiki/20160607_jeffrey)
+---
+- 告知 morris MEMS 麥克風 不靈敏
+- i.MX Linux® User's Guide Flash memory maps
+- NAND flash memory map mtdparts
+- 鈺太科技 測 MEMS MIC  
+- 準備 schedule proposal
+- 鈺太科技 MEMS MIC OP 放大  
+- 充實 麥克風 知識
 
 [2016-06-13](https://github.com/silenceuncrio/diary/wiki/20160613_jeffrey)
 ---
