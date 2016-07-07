@@ -101,3 +101,92 @@
 - 死 Unmounting rootfs partition
 
 
+[2016-06-20](https://github.com/silenceuncrio/diary/wiki/20160620_jeffrey)
+---
+- Winston dual image U-Boot
+- m300
+- ucl2.xml NAND Flash
+- burn the kernel to NAND
+- burn the rootfs to NAND
+- ucl2.xml NAND Flash
+- Create a FLASH partition to store user's HOME
+- engineering notebook
+- m300_proposal_uboot_imageLayout_NANDFlash_jeffrey
+
+[2016-06-21](https://github.com/silenceuncrio/diary/wiki/20160621_jeffrey)
+---
+- morris NAND Flash issue
+- review
+- Managing flash storage with Linux
+- m300_proposal_uboot_imageLayout_NANDFlash_jeffrey
+- [U-Boot: Hush Shell, Scripting](http://www.xilinx.com/video/soc/u-boot-hush-shell-scripting.html)  
+- Efm Bridge mac filter target date 六月底
+- jammy 分享 [How-To use NAND boot on i.MX6UL EVK board](https://community.nxp.com/docs/DOC-236994)
+
+[2016-06-22](https://github.com/silenceuncrio/diary/wiki/20160622_jeffrey)
+---
+- ariel m300 meeting  
+- checkout source code http://192.168.0.222/svn/5600N
+- IP175D Preliminary Datasheet Address table`
+- spring mac filter CTCU schmid
+- 5600N 12V baud rate 115200
+- Hardware ACL Layer 2-4 Multi-Field Classification
+
+[2016-06-23](https://github.com/silenceuncrio/diary/wiki/20160623_jeffrey)
+---
+- IP175D MAC Filter
+- Layer 2-4 Multi-Field Classification Application Note
+- SuperTask DebugTask mii
+
+[2016-06-24](https://github.com/silenceuncrio/diary/wiki/20160624_jeffrey)
+---
+- m300 meeting proposal  
+- mac filter
+- spring 底層 IP175D 寫好了
+- 5600N web page 出不來
+- spring nmake allclean 問題 解決
+
+
+
+[2016-06-27](https://github.com/silenceuncrio/diary/wiki/20160627_jeffrey)
+---
+- 更動 file 如下
+- ameba cJSON library porting SuperTask 放棄
+- morris m300 NAND Flash boot code
+- 討論 alarm sensor ISD9160
+- acl_cgi.c
+- engineering notebook
+
+[2016-06-28](https://github.com/silenceuncrio/diary/wiki/20160628_jeffrey)
+---
+- base on CGI 作 web
+- CSS 複習
+- acl.htm
+- 老婆 竹北 東元 婦產科
+- acl_cgi.sht
+- closure
+
+[2016-06-29](https://github.com/silenceuncrio/diary/wiki/20160629_jeffrey)
+---
+- web
+- alarm sensor ISD9160 morris 新唐 代理商
+- acl.htm
+- jquery 5600N jquery-1.5.1.min.js
+- ready function
+- function mac_filter_tr(Idx)
+- `$("input[type=text]").attr("maxlength", 2);`
+- `$('#apply').click(apply_all);`
+- ready function
+
+[2016-06-30](https://github.com/silenceuncrio/diary/wiki/20160630_jeffrey)
+---
+- 月會 90 秒演講 倖存者偏差
+- 回顧 MAC Filter 我 做了什麼
+- M300 周會  
+- alarm sensor 開會  
+- spring acl.c 再補強
+- acl.c 補強
+- commit
+
+
+
