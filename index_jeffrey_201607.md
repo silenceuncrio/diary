@@ -156,4 +156,82 @@
 - 不能 使用 busybox 的 `ps` 而是要 使用 完整功能 的 `procps`
 - 確認 是否有 `procps` recipe
 
+[2016-07-18](https://github.com/silenceuncrio/diary/wiki/20160718_jeffrey)
+---
+- 安裝 `procps` 到 M300 的 image 上
+- 開機 出錯 `[ -f /etc/sysctl.conf ] && sysctl -p -e >&-`
+- 修改 `do_install_append ()` - 沒有 install
+- `<POKY_DIR>/poky/meta/recipes-extended/procps/procps_3.3.10.bb` - 解析
+- 修改 `/etc/rc.local` - 拿掉 `[ -f /etc/sysctl.conf ] && sysctl -p -e >&-` - commit
+- engineering notebook
+- M300 板子 禮拜三 回來
+- [BitBake User Manual](http://www.yoctoproject.org/docs/2.1/bitbake-user-manual/bitbake-user-manual.html) - [Appendix A. Hello World Example](http://www.yoctoproject.org/docs/2.1/bitbake-user-manual/bitbake-user-manual.html#hello-world-example)
+- [BitBake User Manual](http://www.yoctoproject.org/docs/2.1/bitbake-user-manual/bitbake-user-manual.html) - [Appendix A. Hello World Example](http://www.yoctoproject.org/docs/2.1/bitbake-user-manual/bitbake-user-manual.html#hello-world-example)
+- 基本 BitBake Hello World 架構
+- [From Bitbake Hello World to an Image](http://hambedded.org/blog/2012/11/24/from-bitbake-hello-world-to-an-image/)
+
+[2016-07-19](https://github.com/silenceuncrio/diary/wiki/20160719_jeffrey)
+---
+- `bitbake.conf` 在 `<POKY_DIR>/poky/meta/conf` 目錄
+- `core-image-minimal` 是個 `recipe`
+- [From Bitbake Hello World to an Image](http://hambedded.org/blog/2012/11/24/from-bitbake-hello-world-to-an-image/)
+- [The Linux Command Line: A Complete Introduction](https://www.amazon.com/Linux-Command-Line-Complete-Introduction/dp/1593273894/ref=sr_1_2?ie=UTF8&qid=1468904908&sr=8-2&keywords=shell+script)
+- review M300 web
+- [異種國度](http://acg.gamer.com.tw/acgDetail.php?s=83148) - Alienation
+- [The Linux Command Line: A Complete Introduction](https://www.amazon.com/Linux-Command-Line-Complete-Introduction/dp/1593273894/ref=sr_1_2?ie=UTF8&qid=1468904908&sr=8-2&keywords=shell+script)
+
+[2016-07-20](https://github.com/silenceuncrio/diary/wiki/20160720_jeffrey)
+---
+- cpu board 打件 回來
+- `Boot Device` 為 `NAND` - console 沒任何訊息
+- MfgTool 燒錄 code
+- MfgTool `Jumping to OS image.` 停住 - MXS NAND: DMA read error
+- M300 CPU Board 1 號 - 3 號 和 4 號
+- 4 號板 `Boot Device` 為 `MicroSD` - 開機 - iCOS 跑起來了
+- 早上做的事 換成 公板
+- [[U-Boot] MXS NAND: DMA read error](https://patchwork.ozlabs.org/patch/153071/)
+- pioneer 分享 openvpn 在 vpn router 上的實作
+- `mx6ul_14x14_evk.h` DMA 相關部分拿掉 - build 不過
+- M300 console 是公頭 - 兩個公頭之間 杜邦線
+- 出錯的點 - `<UBOOT_DIR>/drivers/mtd/nand/mxs_nand.c`
+- 套用 [How-To use NAND boot on i.MX6UL EVK board](https://community.nxp.com/docs/DOC-236994) 的 `mx6ul_14x14_evk.h` - PASS
+- 修改 `ucl2.xml` - 大步前進
+- M300 的 kernel 和 rootfs 一起燒
+
+[2016-07-21](https://github.com/silenceuncrio/diary/wiki/20160721_jeffrey)
+---
+- 找出 `mx6ul_14x14_evk.h` 修改的關鍵點
+- 做完整的 MfgTool burn image - [2016-07-21-MfgTool.log](https://gist.github.com/silenceuncrio/917bc8a24a2c3c8b3bc6a08e1c10cc83) - nand 開機 看不到 console 任何訊息
+- [NAND BOOT fail on iMX6UL](https://community.nxp.com/message/640692)
+- `i.MX 6UltraLite Applications Processor Reference Manual` - `Chapter 8 System Boot`
+- BOOT_CFG1[1:0] - Nand_Row_address_bytes - Row Address Cycle
+- M300 Web UI Proposal meeting
+- [反及閘快閃記憶體（NAND Flash Memory）簡介](http://bbs.hwrf.com.cn/downpcbe/NAND%20Flash%20Memory-9386.pdf)
+- MX30LF1G18AC - 2 個 `Row address` - `BOOT_CFG1[1:0]` = `2'b01`
+- morris 幫忙改 - 開機 console 沒 任何訊息
+
+[2016-07-22](https://github.com/silenceuncrio/diary/wiki/20160722_jeffrey)
+---
+- 寫 KPI
+- M300 meeting - aaron 確定 八月一號 報到
+- 繼續 NAND Flash 問題
+- 套用 [How-To use NAND boot on i.MX6UL EVK board](https://community.nxp.com/docs/DOC-236994) 的 `mx6ul_14x14_evk.h`
+- 將 U-Boot 燒錄到 NAND Flash - `kobs-ng init -x -v --chip_0_device_path=/dev/mtd0 $FILE`
+- 試 MfgTool - `L3.14.52_1.1.0_ga-mfg-tools.tar.gz`
+- MXIC FAE Frank 電話
+- winston 示範 怎麼看 code 有寫到 NAND Flash 去
+- `0x87800000` address - RAM 裡面的 U-Boot
+- `local.conf` `UBOOT_CONFIG = "nand"` - SD Card 開機 - U-Boot 有 `nand` command 可以使用
+
+[2016-07-25](https://github.com/silenceuncrio/diary/wiki/20160725_jeffrey)
+---
+- review
+- 安裝 Yocto project cross-compilation toolchain
+- 整理問題 尋求協助
+- 在 論壇 https://community.nxp.com/docs/DOC-236994 發問
+- 看 i.MX6UL boot 相關 部分
+- BOOT_CFG2[4:3] 的 shipped value 為 2'b00
+- morris 3 號板 BOOT_CFG2 改成 0x00 - 開機 挑戰失敗
+- U-Boot - `fuse`
+
 
