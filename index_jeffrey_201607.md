@@ -234,4 +234,36 @@
 - morris 3 號板 BOOT_CFG2 改成 0x00 - 開機 挑戰失敗
 - U-Boot - `fuse`
 
+[2016-07-26](https://github.com/silenceuncrio/diary/wiki/20160726_jeffrey)
+---
+- AVNET CPU 公板 emmc 開機
+- Frank 回信
+- 致電 mike
+- imximage.cfg u-boot.bin u-boot.imx
+- `<UBOOT_SRC>` 另存 `<UBOOT_SRC_NAND>`
+- `u-boot.imx` SD Card - `<UBOOT_SRC>` 或 `<UBOOT_SRC_NAND>` 可以 從 SD Card 開機
+- 研究 GPIO 點燈
+- 觀察 `<UBOOT_SRC>/board/freescale/mx6ul_14x14_ddr3_arm2/imximage.cfg` DCD
+
+[2016-07-27](https://github.com/silenceuncrio/diary/wiki/20160727_jeffrey)
+---
+- review
+- 配合 winston 步調 準備環境
+- 點燈 參考 `26.4.3.2 GPIO Write Mode`
+- 知道 暫存器 點燈 後 - 寫成 assembly 塞到 uboot 去
+- 把 `50`, `51` 和 `52` 通通點亮
+- 通通點亮 `test.c` - `arm-poky-linux-gnueabi-gcc test.c -S` 得到 `test.s`
+- 寫到 `<UBOOT_SRC>/arch/arm/cpu/armv7/start.S`
+- NAND Flash 開機 - les #50, #51, #53 亮了
+
+[2016-07-28](https://github.com/silenceuncrio/diary/wiki/20160728_jeffrey)
+---
+- trace 從 U-Boot 的 start.s 出發 經過的路
+- `start.S` - `crt0.S` - `board_f.c` 的 `board_init_f()`
+- init_sequence_f[] - console_init_f - 我要把陣亡的點找出來
+- NAND Falsh 的 U-Boot 直接開起來了
+- NAND Flash 開機 4 號 - 6 號 無法從 NAND Flash 開機 - 4 號板子 bad block 消失
+- 14 號板子 實驗 - `nand scrub.chip` - erase all factory set bad blocks - NAND Flash 開機 成功
+- 復健
+
 
