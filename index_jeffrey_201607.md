@@ -266,4 +266,16 @@
 - 14 號板子 實驗 - `nand scrub.chip` - erase all factory set bad blocks - NAND Flash 開機 成功
 - 復健
 
+[2016-07-29](https://github.com/silenceuncrio/diary/wiki/20160729_jeffrey)
+---
+- 完整 image 燒錄 - 開起來了
+- M300 meeting
+- 整理 日記 寫 index
+- 什麼是 OOB
+- [SLC Nand Flash driver](http://afttnote.blogspot.tw/2015/01/slc-nand-flash-driver.html)
+- recipes used to build a manufacturing tool image
+- VirtualBox `study_ubuntu_16` 只有 16 GB
+- 建 80 GB VirtualBox `ubuntu_16`
+- 安裝 samba - YOCTO - build image - `bitbake linux-mfgtool`
+
 
