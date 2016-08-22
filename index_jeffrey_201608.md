@@ -67,3 +67,65 @@
 - [Icon Font 的使用方式](http://www.oxxostudio.tw/articles/201406/css-icon-font.html) 加強一下知識
 - [Bootstrap 3 Tutorial](http://www.w3schools.com/bootstrap/)
 - 可以 利用 bootsrap 寫網頁
+
+[2016-08-08](https://github.com/silenceuncrio/diary/wiki/20160808_jeffrey)
+---
+- review
+- 整理 GitHub Index
+- engineering notebook
+- VirtualBox scp
+- CGI Class 101 - cgi_1
+- CGI Class 101 - cgi_2
+- m300 webui
+- bootstrap template
+- MfgTool 多 USB Port 被 否決
+
+[2016-08-09](https://github.com/silenceuncrio/diary/wiki/20160809_jeffrey)
+---
+- 準備 winston 協助 NAND Flash 開機 image 的板子
+- `nand read.raw` 讀出 再寫回 nand flash
+- 盤 將 `kernel` 和 `rootfs` 燒錄到 NAND 所需 tool
+- `mtd-utils` recipe
+- U-Boot 把 NAND Flash image dump 出來
+- 修改 `mx6ul_14x14_evk.h` - image 2MB
+- U-Boot - image dump - tftpput
+- 萬事起頭難
+- 7 個 page dump - 64, 128, 192, 256, 320, 384, 448
+- 第 320 個 page - DBBT - 不是我想像的規則 - 放棄
+
+[2016-08-10](https://github.com/silenceuncrio/diary/wiki/20160810_jeffrey)
+---
+- review
+- Bad Linux ARM zImage magic
+- 修改 `mx6ul_14x14_evk.h` - ${loadaddr} - ${fdt_addr}
+- `boot` 改小 - 從 `4m` 改成 `2m`
+- 把 0x200000 大小 的 `boot` 搞出來
+- mtdinfo 怎麼用
+- nanddump 怎麼用
+- 研究 燒錄機 - ALL-100P
+- PHT 表示 燒錄機 是 `FLASH-100`
+
+[2016-08-11](https://github.com/silenceuncrio/diary/wiki/20160811_jeffrey)
+---
+- PHT - 隔壁電腦 `C:\Program Files\Hi-Lo\FLASH-100` 複製
+- FLASH-100 User's Manual - SNAND8 Help
+- 燒錄 0 ~ 15 這 16 個 block
+- 拜託 morris 換 NAND Flash - 4 號板
+- 致電 frank 詢問 NAND Flash 相關知識
+- 4 號板 - 不可以開機
+
+[2016-08-12](https://github.com/silenceuncrio/diary/wiki/20160812_jeffrey)
+---
+- 昨天下班前 ken 幫我換一片 NAND Flash
+- 4 號板 - 請 PHT 幫我換 - 5 分鐘 - 厲害
+- M300 開會 - 多了俄羅斯客戶
+- 4 號板 開機成功
+- 整理 術語
+- 4 號板 第 5 個 block 沒有燒錄
+- ken 幫我換的是 13 號板 - 可以開機
+- 記錄 燒錄 過程
+- 充實 bootstrap 知識
+- 昨天 aaron 介紹 [zsh](https://github.com/robbyrussell/oh-my-zsh)
+- 燒錄 NAND Flash 確認可行 - 公布 - 下禮拜
+- 感覺 MfgTool 方便
+- `cmp.b 80000000 81000000 10000`
