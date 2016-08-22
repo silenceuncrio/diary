@@ -129,3 +129,43 @@
 - 燒錄 NAND Flash 確認可行 - 公布 - 下禮拜
 - 感覺 MfgTool 方便
 - `cmp.b 80000000 81000000 10000`
+
+
+[2016-08-15](https://github.com/silenceuncrio/diary/wiki/20160815_jeffrey)
+---
+- 再確認一片燒錄好的 NAND Flash
+- 14 號板 開起來 - ariel 小會議室 報告 好消息
+- dual image 優先 priority
+- Free Bootstrap Admin Dashboard - Siminta
+- BOOTSTRAP SIDE MENU TEMPLATE - metismenu.js
+- [65+ Best Free Bootstrap Admin Templates](http://www.cssauthor.com/bootstrap-admin-templates/)
+- 估 schedule
+- schedule list 放到 mantis
+- `Web server+HTTPS`
+
+[2016-08-16](https://github.com/silenceuncrio/diary/wiki/20160816_jeffrey)
+---
+- bootstrap 和 mentismenu
+- 套 M300 的 menu tree
+- [Twitter bootstrap 3 admin template](https://github.com/bopoda/ace)
+- 從 bootstrap 加 mentismenu 開始
+
+[2016-08-17](https://github.com/silenceuncrio/diary/wiki/20160817_jeffrey)
+---
+- 單純的記錄一下目前的工作環境
+- winston 在廁所主動問我最近怎麼樣
+- chrome `開發人員工具` - trace css
+- Bootstrap-Admin-Theme-3-master
+- side-menu-metis`
+- 比較喜歡 `Bootstrap-Admin-Theme-3-master`
+
+[2016-08-18](https://github.com/silenceuncrio/diary/wiki/20160818_jeffrey)
+---
+- 請 明天的假
+- DigiComm logo
+- bootstrap 搭配 logo 的技巧
+- 調整 bootstrap 原本的配色
+- 大概掌握了 navbar 加上 logo 的作法
+- bootstrap vertical menu 的技巧
+
+
