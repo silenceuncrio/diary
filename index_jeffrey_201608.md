@@ -211,4 +211,33 @@
 - 配合 john 包裝 `wanstcfg.c` 的 CGI
 - `iweb` - 相當滿意的作品
 
+[2016-08-29](https://github.com/silenceuncrio/diary/wiki/20160829_jeffrey)
+---
+- review
+- commit - Revision: 444 - Add lanst.cgi
+- 思考 [AngularJS AJAX - $http](http://www.w3schools.com/angular/angular_http.asp) 
+- 注意 [AngularJs $http.post() does not send data](http://stackoverflow.com/t ns/19254029/angularjs-http-post-does-not-send-data) 這個 issue
+- commit - 今天的成果
+
+[2016-08-30](https://github.com/silenceuncrio/diary/wiki/20160830_jeffrey)
+---
+- john 分享 ubuntu 14.04 怎麼來啟動 samba - 真的可以
+- commit - Modify lanst.html - Modify lanst.cgi
+- commit - Refactoring iweb API - Modify lanst.c - Modify wanst.c
+- commit - Refactoring iweb API, lanst.cgi, wanst.cgi - Add wanst.html
+- trace 目前 login 機制
+- WDBG() function 開啟 - 費不少功夫
+- commit - Refactoring wanst.html
+
+[2016-08-31](https://github.com/silenceuncrio/diary/wiki/20160831_jeffrey)
+---
+- `lanst.html` form input 格式檢查
+- [AngularJS Form Validation](http://www.w3schools.com/angular/angular_validation.asp)
+- [8 Example(s) of Ng-Pattern](http://learnkode.com/Examples/Angular/Ng-Pattern)
+- [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/x 
+- CGI 裡如果也需要比對 regular expression 的話
+- commit - Improve lanst.html
+- [bootstrap form validation done right in angularjs/)](http://blog.yodersolutions.com/s ap-form-validation-done-right-in-angularjs/)
+- 為了 `wanst.html` 有跟原設計者 john 聊了一下
+
 
