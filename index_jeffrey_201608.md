@@ -168,4 +168,47 @@
 - 大概掌握了 navbar 加上 logo 的作法
 - bootstrap vertical menu 的技巧
 
+[2016-08-22](https://github.com/silenceuncrio/diary/wiki/20160822_jeffrey)
+---
+- review
+- 參考 [DigiComm](http://www.digicomm.de/) 配合 logo 來設計上排的選單
+- 目前在 `D:\m300\web\digicomm` 已做出了雛形
+
+[2016-08-23](https://github.com/silenceuncrio/diary/wiki/20160823_jeffrey)
+---
+- engineering notebook
+- 參考 [DigiComm](http://www.digicomm.de/) 的配色
+- SVN update 完發現 compile error
+- 目前 bootstrap 版型大架構
+
+[2016-08-24](https://github.com/silenceuncrio/diary/wiki/20160824_jeffrey)
+---
+- digicomm 的 logo 換了底色 跟 bootstrap 的 `.navbar-inverse` 一樣
+- 參考 [Bootstrap List Groups](http://www.w3schools.com/bootstrap/bootstrap_list_groups.asp)
+- 參考 [Bootstrap Tables](http://www.w3schools.com/bootstrap/bootstrap_tables.asp)
+- SVN clone 一份新的
+- Samba server - root 的權限讓我蠻困擾的
+- 修改 Samba 設定 - jeffrey 的權限
+- chechout 反覆做了三次
+- 安排表單的輸入版面
+
+[2016-08-25](https://github.com/silenceuncrio/diary/wiki/20160825_jeffrey)
+---
+- 昨天 compile 出錯 - ubuntu 裝回 14 版
+- ubuntu 14 - 再試一次 samba - 果然失敗
+- 挑戰一下 nfs - window 10 NFS client - 找不到
+- 太依賴 Source Insight 嗎?
+- checkout m300 的 source code 超慢
+- checkout 完成 - compile prosrc recipe
+- compile opensrc 出錯 - 解決方法
+- 為了 `ndisc6-1.0.3` 需要在 ubuntu_15 做兩件事
+
+[2016-08-26](https://github.com/silenceuncrio/diary/wiki/20160826_jeffrey)
+---
+- 恢復到正常開工的狀態
+- 開響 第一砲 - Revision: 425 - Add "CGI Class 101"
+- m300 meeting
+- 配合 john 包裝 `wanstcfg.c` 的 CGI
+- `iweb` - 相當滿意的作品
+
 
