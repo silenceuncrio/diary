@@ -64,4 +64,105 @@
 - commit - Modify CSS style
 - commit - Refactoring index.html - Modify custom-digicomm.css ...
 
+[2016-09-12](https://github.com/silenceuncrio/diary/wiki/20160912_jeffrey)
+---
+- review
+- engineering notebook
+- Refactoring index.html
+- Add sub page for the logging page
+- Change all management sub page to the following CSS class
+- Modify custom-digicomm.css
 
+
+[2016-09-13](https://github.com/silenceuncrio/diary/wiki/20160913_jeffrey)
+---
+- 今天來作一些 multi language 的事
+- Modify index.html
+- QC080000 課程
+
+
+[2016-09-14](https://github.com/silenceuncrio/diary/wiki/20160914_jeffrey)
+---
+- 來寫 `MODULE_LTE` 的 CGI
+- Add lte.cgi
+- Modify lte.cgi
+- Modify dualSim.html
+- Modify dualSim.html
+- Modify status.html
+- Modify icos_shm.cgi
+- Modify status.html
+
+[2016-09-19](https://github.com/silenceuncrio/diary/wiki/20160919_jeffrey)
+---
+- review
+- Modify status.html
+- 配合 morris 將目前 m300 的 code 燒到 nand flash 去做低溫測試
+- Modify icos_shm.cgi
+- Modify status.html
+- aaron 介紹給我 [angular-busy](https://github.com/cgross/angular-busy)
+
+[2016-09-20](https://github.com/silenceuncrio/diary/wiki/20160920_jeffrey)
+---
+- ariel 表示 status 那一頁要把 dual sim 的 `IPv6 Address` 拿掉
+- Modify pweb-app.js
+- Modify status.js
+- Refactoring status.js
+
+[2016-09-21](https://github.com/silenceuncrio/diary/wiki/20160921_jeffrey)
+---
+- 先 review 一下昨天作的
+- move pweb-app.js from assets to pages
+- refactoring dualSim
+- 來做 `MODULE_COM` 和 `MODULE_VCOM` 的 cgi
+- Add com.cgi
+- Add vcom.cgi
+- Add "COM Ports" web page
+- Modify com.cgi
+- Modify vcom.cgi
+
+[2016-09-22](https://github.com/silenceuncrio/diary/wiki/20160922_jeffrey)
+---
+- review
+- Default language of each language file is English
+- 了解什麼是 Angular 的 promise
+- Refactoring icos.js
+- Refactoring status.js
+- Refactoring dualSim.html and dualSim.js
+- Refactoring lanIpv4.html and lanIpv4.js
+- Refactoring comPorts.html and comPorts.js
+- Modify connmgr.cgi
+- Add "WAN Priority" web page
+- aaron 建議安裝 [docker](https://www.docker.com/) 來取代 VitualBox
+
+[2016-09-23](https://github.com/silenceuncrio/diary/wiki/20160923_jeffrey)
+---
+- docker
+- docker 上的 ubuntu 能 checkout m300 的 code
+- svn checkout 失敗
+- 先回到 VitualBox 上的 ubuntu 14 吧
+- 學習 [Angular 1 Style Guide](https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md)
+- refactoring base on `Angular 1 Style Guide`
+- refactoring base on `Angular 1 Style Guide`
+- refactoring base on `Angular 1 Style Guide`
+- refactoring base on `Angular 1 Style Guide`
+- refactoring base on `Angular 1 Style Guide`
+
+[2016-09-26](https://github.com/silenceuncrio/diary/wiki/20160926_jeffrey)
+---
+- review
+- refactoring base on `Angular 1 Style Guide`
+- engineering notebook
+- Add system.cgi
+- refactoring icos.service.js
+- Modify system.cgi
+- add management_administration.html and management_administration.js
+
+[2016-09-29](https://github.com/silenceuncrio/diary/wiki/20160929_jeffrey)
+---
+- 開始進行 `MODULE_OPENVPN` 的 CGI 和 web UI
+
+[2016-09-30](https://github.com/silenceuncrio/diary/wiki/20160930_jeffrey)
+---
+- m300 開會結束
+- Add "VPN" web page
+- improve "VPN" web page
