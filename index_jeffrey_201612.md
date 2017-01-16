@@ -127,4 +127,123 @@
 - uboot 顯示 `*** Warning - bad CRC, using default environment`
 - 使用 `fw_setenv` 把 `bootargs` 裡的 `ubi.mtd` 從 4(rootfs_a) 改成 9(rootfs_b)
 
+[2016-12-19](https://github.com/silenceuncrio/diary/wiki/20161219_jeffrey)
+---
+- review
+- Warning: Bad CRC, using default environment
+- solve
+- uboot env - bootargs
+
+[2016-12-20](https://github.com/silenceuncrio/diary/wiki/20161220_jeffrey)
+---
+- review
+- 解析 `burn the rootfs to NAND` 流程
+- flash_erase /dev/mtd9 0 0
+- ubiformat /dev/mtd9
+- ubiattach /dev/ubi_ctrl -m 9
+- ubimkvol /dev/ubi1 -Nrootfs -m
+- mkdir -p /mnt/mtd9
+- mount -t ubifs ubi1:rootfs /mnt/mtd9
+- tar -jxv -C /mnt/mtd9 -f images/core-image-minimal-imx6ulevk.tar.bz2
+- umount /mnt/mtd9
+- http://www.linux-mtd.infradead.org/doc/ubi.html
+- mfgtool - ucl2.xml - 讓 rootfs_a, rootfs_b, config_a 和 config_b 跟 ubi device 的關係先固定下來
+- 使用 `ubiattach -m 5` 來 attach MTD device 5 (mtd5) to UBI 之後可看到 ubimkvol 的效果
+- 再次的開機 除了 `ubi0` 看不到其他的 ubi device
+- 需要一個地方來做 ubiattach 的動作
+- 修改 `/etc/rc.local`
+- 根據 uboot env 來決定到底是要 attach `config_a` 或 `config_b`
+- patch `<u-boot-fw-utils>/tools/env/fw_env.config`
+- git commit
+
+[2016-12-21](https://github.com/silenceuncrio/diary/wiki/20161221_jeffrey)
+---
+- review
+- 盤一下 `prosrc_0.1.bb` 和 `local.conf`
+- 修 `<u-boot-imx>\include\configs\mx6ul_14x14_evk.h`
+- 幫 `<u-boot-imx>\include\configs\mx6ul_14x14_evk.h` 上 patch
+- git commit
+- 寫 shell script
+- 修改 `/etc/rc.local`
+- 幫 m300 裝一下 `vim` 方便編輯 shell script
+- 修改 `/etc/rc.local`
+
+
+[2016-12-22](https://github.com/silenceuncrio/diary/wiki/20161224_jeffrey)
+---
+- review
+- 把需要的 image 作打包
+- 回憶之前買的 USB DAC - 使用 pcm2706
+- 盤一下 firmware upgrade shell script 需要哪些動作
+- Extract all files from images.tar
+- burn the uboot to NAND
+- burn the kernel to NAND
+- burn the dtb to NAND
+- burn the rootfs to NAND
+- chnage uboot env
+- commit
+- 目前的 firmware upgrade shell script
+
+[2016-12-23](https://github.com/silenceuncrio/diary/wiki/20161225_jeffrey)
+---
+- m300 開會
+- 準備跟最新的 git 作整合 - 盤一下現況
+- http://nvie.com/posts/a-successful-git-branching-model/
+
+[2016-12-26](https://github.com/silenceuncrio/diary/wiki/20161226_jeffrey)
+---
+- review
+- http://nvie.com/posts/a-successful-git-branching-model/
+- 把之前做的部分手工整合到 `nandflash` 這個 brach
+- 整 `fsl-release-bsp/sources/meta-proscend/recipes-core/prosrc/prosrc_0.1.bb`
+- 參考之前 commit 的紀錄 - patch for u-boot-fw-utils since we need access uboot env from linux
+- 修 `/meta-proscend/conf/distro/proscend-m300.conf b/meta-proscend/conf/distro/proscend-m300.conf`
+- 整 `\M300_git\M300\sources\meta-fsl-arm\conf\machine\imx6ulevk.conf`
+- 整 `M300_git/M300:<u-boot-imx>/include/configs/mx6ul_14x14_evk.h`
+- `u-boot-fw-utils`
+- 利用 `M300_git\M300\proscend\base_fs\default\rootfs` 整 `u-boot-fw-utils`
+- 利用 `git status` 盤今天改了什麼
+- commit
+- engineering notebook
+- 整合 `rc.local` - 配合新的 image 修改 mfgtool 的 `ucl2.xml`
+- 改權限 - `chmod 775 FILE...` - - `fw_printenv`, `fw_setenv` 和 `FirmwareUpgrade.sh`
+- 改 `imx6ul-14x14-evk.dts`
+- 修正 `FirmwareUpgrade.sh` - 製作 firmware.tar - commit
+
+[2016-12-27](https://github.com/silenceuncrio/diary/wiki/20161227_jeffrey)
+---
+- M300 team 就 KPI 這個主題開了會 - 結論
+- review
+- 修改 nfs 的設定
+- 可以修改 `/www/app/` 的 source code 然後直接觀察結果
+- 來寫 KPI
+- 搞定 KPI
+- efm bridge - 幫忙 upgrade 成 ACE 的版本 - 19 片 - 一片沒辦法插 power
+- PHT 裝了 power 給我
+- m300 - firmware upgrade web ui
+- 從 cgi 用不會咬住的方法來呼叫 firmware upgrade 的 shell script
+
+[2016-12-28](https://github.com/silenceuncrio/diary/wiki/20161228_jeffrey)
+---
+- review
+- 改一隻 `/tmp/test.sh`
+- `firmware.tar` 大於 20MB - 上傳就失敗了
+- 利用 mongoose 在 iweb 寫個 upload file 的 api
+- 成功把 2xMB 的 `firmware.tar` 傳到 m300 的 `/tmp/xxx.file` 去
+- 把範例 `big_upload.c` 整到 `iweb.c` 去
+- 成功上傳 2xMB 的 `firmware.tar` - `firmware.cgi` 呼叫 `/tmp/test.sh` 作事
+
+[2016-12-29](https://github.com/silenceuncrio/diary/wiki/20161229_jeffrey)
+---
+- review
+- 把 cgi 跟 shell script 接起來
+- `FirmwareUpgrade.sh` - 一出錯就停下來 而且 讓使用者知道發生甚麼事
+- m300 因為我明天請假所以提前在禮拜四開常態性的周會
+- 目前已經可以透過 web 作 upgrade firmware 這件事了
+- commit
+- commit
+- 製作 firmware.tar 目前手動流程如下
+
+
+
 
