@@ -125,4 +125,34 @@
 - 把預設的位置改到公司來
 - mfgtool flashing firmware 後是沒有 `/home/log` 的... 要注意阿...
 
+[2017-01-23](https://github.com/silenceuncrio/diary/wiki/20170123_jeffrey)
+---
+- review
+- Fine Tune Firmware Built and Upgrade 還有兩個 issue
+- 跟 ariel 稍微 sync 一下
+- 和 ariel 以及 aaron 討論 `rootfs read-only 後導致某些 icos module 初始化異常` 的 issue
+- winston 希望知道我之前 efm bridge 最後跟 actelis co 端達到甚麼樣的狀態
+- 找出當時最後的一封 mail 轉發給 winston - 是由 pioneer 在當時下的一步公司從來沒有的好棋
+- ariel 提出 web ui firmware upgrade 的問題
+- `Fine Tune Firmware Built and Upgrade` 的 proposal 已完成
+- 來進行 `rootfs read-only 後導致某些 icos module 初始化異常` 的 issue
+- 不做 `/bin/mkdir -p /tmp/var` 和 `mount /tmp/var /var`
+- aaron 找到 yocto 本身就有的 `Read-Only Root Filesystem` 功能
+- 明天要回台中一趟
+
+[2017-01-25](https://github.com/silenceuncrio/diary/wiki/20170125_jeffrey)
+---
+- 一早來 ariel 找我討論一下 M300 的 issue
+- morris 請我幫忙用 mfgtool 燒錄 六片 M300
+- M300 法國 CXR 客戶有提供我們 M300 WEB UI 的法語檔案
+- 幫忙把 法文 加入目前 M300 的多國語系架構
+
+[2017-01-26](https://github.com/silenceuncrio/diary/wiki/20170126_jeffrey)
+---
+- 早上來 morris 告知昨天幫他燒錄的那六片 M300 怎麼開機還是那麼久才會閃燈
+- 原來 morris 準備的哪幾片要出 sample 的
+- 跟 ariel 討論一下早上 morris 的需求 - `閃燈快一點這件事能夠在一燒錄完就有了`
+- 可以來 patch 了
+- git commit
+- 過年後需要跟產線單位 demo 一下怎麼使用 mfgtool
 
