@@ -90,3 +90,39 @@
 - 產生 firmware 的時候還要考慮到 MCSV 的資訊
 - 盤 https://github.com/silenceuncrio/diary/blob/master/index_jeffrey_201612.md
 - 我們 firmware 裡面的 MCSV 資訊需要保護 - 對稱加密 - openssl
+
+[2017-01-17](https://github.com/silenceuncrio/diary/wiki/20170117_jeffrey)
+---
+- review
+- 整理 github - index_jeffrey_201701.md
+- Fine Tune Firmware Built and Upgrade
+
+[2017-01-18](https://github.com/silenceuncrio/diary/wiki/20170118_jeffrey)
+---
+- 幫 john 把切不回好的 application 的 m300 急救一下
+- 來把 modal 的機制換一下
+- 全部的 modal 都換掉
+- login 和 logout 也套 sweetalert
+- 法國客戶 CXR 會後決議 m300 上的 IEEE 802.1ag 和 ITU-T Y.1731 需求 取消
+
+[2017-01-19](https://github.com/silenceuncrio/diary/wiki/20170119_jeffrey)
+---
+- review
+- 我們 firmware 裡面的 MCSV 資訊需要保護
+- m300 的 hardware mcsv 與 software mcsv 可以參考之前 john 分享的情報
+- m300 的 hardware mcsv 可從 `/tmp/etc/sysinfo.txt` 取得
+- 準備一下 proposal
+- 把 rootfs 轉成 read-only 會出錯
+
+[2017-01-20](https://github.com/silenceuncrio/diary/wiki/20170120_jeffrey)
+---
+- 繼續昨天的修改前先盤一下
+- FirmwareUpgrade.sh
+- uboot_env.sh
+- commit 時要寫什麼呢
+- git push... ok
+- 加了 gps 的 web page
+- 把預設的位置改到公司來
+- mfgtool flashing firmware 後是沒有 `/home/log` 的... 要注意阿...
+
+
