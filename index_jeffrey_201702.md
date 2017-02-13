@@ -40,7 +40,7 @@
 - ariel 表示 GPS 的 icos module 會提供 經度 和 緯度 給我
 - web 的 `Dual SIM` page 的 `Connect` 按鈕按下去之後應該刷新一下才會變成其他的按鈕
 
-[2017-02-10](https://github.com/silenceuncrio/diary/wiki/201702010_jeffrey)
+[2017-02-10](https://github.com/silenceuncrio/diary/wiki/20170210_jeffrey)
 ---
 - `Dual SIM page` - 'Connect' 按鈕需要修正一下
 - m300 週會
